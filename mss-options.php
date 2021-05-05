@@ -90,6 +90,14 @@ if (class_exists('CSF')) {
                 'title'  => 'Miscellaneous . . .',
                 'fields' => array(
                     array(
+                        'id'         => 'mss_misc_is_loading',
+                        'type'       => 'switcher',
+                        'text_on'    => 'Enable',
+                        'text_off'   => 'Disable',
+                        'text_width' => 100,
+                        'title'      => 'Enable "LOADING" while page load.',
+                    ),
+                    array(
                         'id'    => 'mss_misc_profile',
                         'type'  => 'media',
                         'title' => 'Profile Photo',
@@ -226,6 +234,22 @@ if (class_exists('CSF')) {
                         'id'    => 'mss_bio_repeater_para',
                         'type'  => 'textarea',
                         'title' => 'Paragraph #'
+                    ),
+                ),
+            ),
+            array(
+                'id'           => 'mss_bio_awards',
+                'type'         => 'repeater',
+                'min'          => 1,
+                'max'          => 200,
+                'title'        => 'Award Details (multiline)',
+                'desc'         => 'Set the award list.',
+                'button_title' => 'Add new award . . .',
+                'fields'       => array(
+                    array(
+                        'id'    => 'mss_bio_award_item',
+                        'type'  => 'text',
+                        'title' => 'Award #'
                     ),
                 ),
             ),
