@@ -186,6 +186,15 @@ if (class_exists('CSF')) {
                     ),
                 )
             ),
+            array(
+                'id'    => 'mss_slide_overlay',
+                'type'  => 'slider',
+                'min'   => 0,
+                'max'   => 10,
+                'step'  => 1,
+                'title' => 'Overlay Amount',
+                'desc'  => 'Set the overlay amount of slider image.',
+            ),
         )
     ));
 
