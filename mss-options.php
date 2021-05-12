@@ -98,6 +98,21 @@ if (class_exists('CSF')) {
                         'title'      => 'Enable "LOADING" while page load.',
                     ),
                     array(
+                        'id'    => 'mss_misc_page_header',
+                        'type'  => 'media',
+                        'title' => 'Page Header Image',
+                        'desc'  => 'Set the page header image of all pages.',
+                    ),
+                    array(
+                        'id'    => 'mss_misc_page_header_overlay',
+                        'type'  => 'slider',
+                        'min'   => 0,
+                        'max'   => 10,
+                        'step'  => 1,
+                        'title' => 'Page Header Overlay ',
+                        'desc'  => 'Set the overlay amount of page header image.',
+                    ),
+                    array(
                         'id'    => 'mss_misc_profile',
                         'type'  => 'media',
                         'title' => 'Profile Photo',
