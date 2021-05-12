@@ -31,6 +31,15 @@ Text Domain: msshahnewaz
     padding: 48.5px 58px !important;
 }*/
 .sign {
-    width: 350px !important;
+    width: 295px !important;
     opacity: 0.5;
+}
+.award-list li {
+    margin-bottom: 15px;
+}
+.text-em-sm {
+    font-size: 10px;
+}
+.text-default {
+    color: #9B5350;
 }

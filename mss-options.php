@@ -343,12 +343,12 @@ if (class_exists('CSF')) {
                 'title'      => 'Enable Hire Me block in "HOME PAGE"',
             ),
             array(
-                'id'         => 'mss_hire_is_portfolio_page',
+                'id'         => 'mss_hire_is_other_page',
                 'type'       => 'switcher',
                 'text_on'    => 'Enable',
                 'text_off'   => 'Disable',
                 'text_width' => 100,
-                'title'      => 'Enable Hire Me block in "PORTFOLIO PAGE"',
+                'title'      => 'Enable Hire Me block in "ALL OTHER PAGE"',
             ),
             array(
                 'id'    => 'mss_hire_title',
