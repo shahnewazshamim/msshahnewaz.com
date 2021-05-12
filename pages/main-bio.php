@@ -48,9 +48,9 @@
                     <div class="col-md-8 animate-box mb-60" data-animate-effect="fadeInUp">
                         <h6>Awards <small class="text-em-sm"><em>Don't Judge My Skill</em></small></h6>
                         <ul class="award-list">
-                        <?php foreach(cs_get_options()['mss_bio_awards'] as $data) : ?>
-                            <li class="text-justify"><span class="text-default pr-2">&#10003; </span><?php echo $data['mss_bio_award_item'] ?></li>
-                        <?php endforeach; ?>
+                            <?php foreach(cs_get_options()['mss_bio_awards'] as $data) : ?>
+                                <li class="text-justify"><span class="text-default pr-2">&#10003; </span><?php echo $data['mss_bio_award_item'] ?></li>
+                            <?php endforeach; ?>
                         </ul>
                     </div>
                 </div>
