@@ -12,6 +12,6 @@
 <?php get_template_part( 'template-parts/content', 'loading' ); ?>
 <?php get_template_part( 'template-parts/content', 'navbar' ); ?>
 <?php get_template_part( 'template-parts/content', 'banner' ); ?>
-<?php get_template_part( 'pages/main', 'contact' ); ?>
+<?php get_template_part( 'page-contents/main', 'contact' ); ?>
 <?php get_template_part( 'template-parts/content', 'footer' ); ?>
 <?php get_footer(); ?>
