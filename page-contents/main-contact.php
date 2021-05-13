@@ -13,34 +13,22 @@
     <div class="container">
         <div class="row mb-90">
             <div class="col-md-6 mb-30 animate-box" data-animate-effect="fadeInUp">
-                <h6>Contact Info</h6>
-                <p>Qualamy nisl sodales sit amet sapien id, placerat sodales orciter.
-                    <br>Vivamus nec magna rhoncus felis, faucibus printy.</p>
-                <p><b>Phone :</b> +1 (123) 444-5555</p>
-                <p><b>Email :</b> photography@jopho.com</p>
-                <p><b>Address :</b> 1040 Bayhill Dr, San Bruno, CA 94066, US.</p>
+                <h6><?php echo cs_get_options()['mss_contact_intro'] ?></h6>
+                <p><?php echo cs_get_options()['mss_bio_intro'] ?></p>
+                <p><b>Phone :</b> <?php echo cs_get_options()['mss_contact_phone'] ?></p>
+                <p><b>Mobile :</b> <?php echo cs_get_options()['mss_contact_mobile'] ?></p>
+                <p><b>WhatsApp :</b> <?php echo cs_get_options()['mss_contact_whatsapp'] ?></p>
+                <p><b>Email :</b> <?php echo cs_get_options()['mss_contact_email'] ?></p>
+                <p><b>Address :</b> <?php echo cs_get_options()['mss_contact_address'] ?></p>
             </div>
             <div class="col-md-6 animate-box" data-animate-effect="fadeInUp">
-                <h6>Contact Form</h6>
-                <p>Interested to work wiht us?</p>
-                <form method="post" class="row">
-                    <div class="col-md-6">
-                        <input type="text" name="name" id="name" placeholder="Full Name"> </div>
-                    <div class="col-md-6">
-                        <input type="email" name="email" id="email" placeholder="Email" required=""> </div>
-                    <div class="col-md-12">
-                        <textarea name="message" id="message" cols="40" rows="4" placeholder="Message"></textarea>
-                    </div>
-                    <div class="col-md-12">
-                        <button class="butn-dark mt-10" type="submit">Send Message</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <!-- Map Section-->
-        <div class="row">
-            <div class="col-md-12 mb-30 animate-box" data-animate-effect="fadeInUp">
-                <div id="jophoto-contactMap"></div>
+                <h6><?php echo cs_get_options()['mss_hire_title'] ?></h6>
+                <p class="text-justify"><?php echo cs_get_options()['mss_hire_desc'] ?></p>
+                <p class="text-justify">
+                    <a href="<?php echo cs_get_options()['mss_hire_google_link']['url'] ?>" target="<?php echo cs_get_options()['mss_hire_google_link']['target'] ?>" class="butn butn-dark mt-10 mr-3"><span><?php echo cs_get_options()['mss_hire_google_link']['text'] ?></span></a>
+                    <a href="<?php echo cs_get_options()['mss_hire_commercial_link']['url'] ?>" target="<?php echo cs_get_options()['mss_hire_commercial_link']['target'] ?>" class="butn butn-dark mt-10 mr-3"><span><?php echo cs_get_options()['mss_hire_commercial_link']['text'] ?></span></a>
+                    <a href="<?php echo cs_get_options()['mss_hire_ngo_link']['url'] ?>" target="<?php echo cs_get_options()['mss_hire_ngo_link']['target'] ?>" class="butn butn-dark mt-10 mr-3"><span><?php echo cs_get_options()['mss_hire_ngo_link']['text'] ?></span></a>
+                </p>
             </div>
         </div>
     </div>

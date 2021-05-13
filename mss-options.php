@@ -378,6 +378,16 @@ if (class_exists('CSF')) {
                 'title' => 'Client Page Link',
             ),
             array(
+                'id'    => 'mss_hire_commercial_link',
+                'type'  => 'link',
+                'title' => 'Commercial Page Link',
+            ),
+            array(
+                'id'    => 'mss_hire_ngo_link',
+                'type'  => 'link',
+                'title' => 'NGO Page Link',
+            ),
+            array(
                 'id'    => 'mss_hire_google_link',
                 'type'  => 'link',
                 'title' => 'Google Form Link',
