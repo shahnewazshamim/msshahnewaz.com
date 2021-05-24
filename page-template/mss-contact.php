@@ -13,5 +13,8 @@
 <?php get_template_part( 'template-parts/content', 'navbar' ); ?>
 <?php get_template_part( 'template-parts/content', 'banner' ); ?>
 <?php get_template_part( 'page-contents/main', 'contact' ); ?>
+<?php if(cs_get_options()['mss_packages_is_contact_page']): ?>
+    <?php get_template_part( 'template-parts/content', 'packages' ); ?>
+<?php endif; ?>
 <?php get_template_part( 'template-parts/content', 'footer' ); ?>
 <?php get_footer(); ?>

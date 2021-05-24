@@ -24,11 +24,10 @@
             <div class="col-md-6 animate-box" data-animate-effect="fadeInUp">
                 <h6><?php echo cs_get_options()['mss_hire_title'] ?></h6>
                 <p class="text-justify"><?php echo cs_get_options()['mss_hire_desc'] ?></p>
-                <p class="text-justify">
-                    <a href="<?php echo cs_get_options()['mss_hire_google_link']['url'] ?>" target="<?php echo cs_get_options()['mss_hire_google_link']['target'] ?>" class="butn butn-dark mt-10 mr-3"><span><?php echo cs_get_options()['mss_hire_google_link']['text'] ?></span></a>
-                    <a href="<?php echo cs_get_options()['mss_hire_commercial_link']['url'] ?>" target="<?php echo cs_get_options()['mss_hire_commercial_link']['target'] ?>" class="butn butn-dark mt-10 mr-3"><span><?php echo cs_get_options()['mss_hire_commercial_link']['text'] ?></span></a>
-                    <a href="<?php echo cs_get_options()['mss_hire_ngo_link']['url'] ?>" target="<?php echo cs_get_options()['mss_hire_ngo_link']['target'] ?>" class="butn butn-dark mt-10 mr-3"><span><?php echo cs_get_options()['mss_hire_ngo_link']['text'] ?></span></a>
-                </p>
+                <div class="col-md-12">
+                    <a href="<?php echo cs_get_options()['mss_hire_google_link']['url'] ?>" target="<?php echo cs_get_options()['mss_hire_google_link']['target'] ?>"
+                       class="butn butn-dark mt-10 text-center" style="display: block"><span><?php echo cs_get_options()['mss_hire_google_link']['text'] ?></span></a>
+                </div>
             </div>
         </div>
     </div>

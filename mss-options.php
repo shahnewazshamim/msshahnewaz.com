@@ -421,6 +421,12 @@ if (class_exists('CSF')) {
                 'title'      => 'Enable Package block in "CLIENT PAGE"',
             ),
             array(
+                'id'    => 'mss_packages_section_title',
+                'type'  => 'text',
+                'title' => 'Section Title',
+                'desc'  => 'Set the section title.',
+            ),
+            array(
                 'id'                     => 'mss_packages_items',
                 'type'                   => 'group',
                 'title'                  => 'Package Items',
@@ -433,17 +439,22 @@ if (class_exists('CSF')) {
                     array(
                         'id'    => 'mss_package_title',
                         'type'  => 'text',
-                        'title' => 'Package Title',
+                        'title' => 'Title',
                     ),
                     array(
                         'id'    => 'mss_package_category',
                         'type'  => 'text',
-                        'title' => 'Package Category',
+                        'title' => 'Category',
                     ),
                     array(
                         'id'    => 'mss_package_price',
                         'type'  => 'text',
                         'title' => 'Price in BDT',
+                    ),
+                    array(
+                        'id'    => 'mss_package_image',
+                        'type'  => 'media',
+                        'title' => 'Image',
                     ),
                     array(
                         'id'           => 'mss_package_item_repeater',
