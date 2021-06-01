@@ -159,7 +159,7 @@ if ( ! function_exists( 'create_portfolio_post_type' ) ) {
                     'not_found'           => __( 'Not Found', 'M_S_Shahnewaz_Dark' ),
                     'not_found_in_trash'  => __( 'Not found in Trash', 'M_S_Shahnewaz_Dark' ),
                 ),
-                'rewrite'             => array('slug' => 'portfolios'),
+                'rewrite'             => array('slug' => 'portfolio'),
                 'menu_icon'           => 'dashicons-portfolio',
                 'description'         => __( 'Stories and Series', 'M_S_Shahnewaz_Dark' ),
                 'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields', ),
