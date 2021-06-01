@@ -44,9 +44,9 @@ define("DIR_MSS_JS", DIR_MSS_STYLE . "/assets/js/");
  * M S Shahnewaz Theme Supports
  **********************************************************************************************************************/
 
-/*add_theme_support( 'post-thumbnails' );
+add_theme_support( 'post-thumbnails' );
 add_theme_support( 'stories-post-thumbnails' );
-add_theme_support( 'responsive-embeds' );*/
+add_theme_support( 'responsive-embeds' );
 
 /*
  * 360x240 = col-md-4 Land

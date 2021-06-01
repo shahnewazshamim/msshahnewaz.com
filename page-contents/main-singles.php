@@ -19,22 +19,16 @@
         <div class="container">
             <div class="row jophoto-photos" id="jophoto-section-photos">
                 <?php if(is_array($ids)) : ?>
-                    <?php
-                    $orientation = get_post_custom_values('orientation')[0];
-
-                    ?>
-
-                    <div class="row align-items-stretch">
-                        <?php foreach($ids as $id) : ?>
-                            <?php $grid = (cs_get_options()['mss_misc']['mss_misc_gallery_column_size']) ? cs_get_options()['mss_misc']['mss_misc_gallery_column_size'] : 3 ; ?>
-                            <div class="col-sm-12 col-md-<?php echo $grid ?> animate-box" data-animate-effect="fadeInUp">
-                                <a href="<?php echo wp_get_attachment_image_src($id, 'full')[0] ?>" class="d-block jophoto-photo-item" data-caption="<?php echo wp_get_attachment_caption($id) . ' | Photo By - ' . get_userdata(1)->display_name; ?>" data-fancybox="gallery">
-                                    <img src="<?php echo wp_get_attachment_image_src($id, 'col-md-' . $grid . '-' . $orientation)[0] ?>" alt="Image" class="img-fluid">
-                                    <div class="photo-text-more"> <span class="ti-fullscreen"></span> </div>
-                                </a>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
+                    <?php $orientation = get_post_custom_values('orientation')[0]; ?>
+                    <?php foreach($ids as $id) : ?>
+                        <?php $grid = (cs_get_options()['mss_misc']['mss_misc_gallery_column_size']) ? cs_get_options()['mss_misc']['mss_misc_gallery_column_size'] : 3 ; ?>
+                        <div class="col-md-<?php echo $grid ?> animate-box" data-animate-effect="fadeInUp">
+                            <a href="<?php echo wp_get_attachment_image_src($id, 'full')[0] ?>" class="d-block jophoto-photo-item" data-caption="<?php echo wp_get_attachment_caption($id) . ' | Photo By - ' . get_userdata(1)->display_name; ?>" data-fancybox="gallery">
+                                <img src="<?php echo wp_get_attachment_image_src($id, 'col-md-' . $grid . '-' . $orientation)[0] ?>" alt="Image" class="img-fluid">
+                                <div class="photo-text-more"> <span class="ti-fullscreen"></span> </div>
+                            </a>
+                        </div>
+                    <?php endforeach; ?>
                 <?php endif; ?>
             </div>
         </div>
