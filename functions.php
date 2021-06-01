@@ -44,9 +44,29 @@ define("DIR_MSS_JS", DIR_MSS_STYLE . "/assets/js/");
  * M S Shahnewaz Theme Supports
  **********************************************************************************************************************/
 
-add_theme_support( 'post-thumbnails' );
+/*add_theme_support( 'post-thumbnails' );
 add_theme_support( 'stories-post-thumbnails' );
-add_theme_support( 'responsive-embeds' );
+add_theme_support( 'responsive-embeds' );*/
+
+/*
+ * 360x240 = col-md-4 Land
+ * 360x540 = col-md-4 Port
+ *
+ * 555x370 = col-md-6 Land
+ * 555x833 = col-md-6 Port
+ *
+ * 263x175 = col-md-3 Land
+ * 263x394 = col-md-3 Port
+ */
+
+add_image_size( 'col-md-4-landscape', 360, 240, true );
+add_image_size( 'col-md-4-portrait', 360, 540, true );
+
+add_image_size( 'col-md-6-landscape', 555, 370, true );
+add_image_size( 'col-md-6-portrait', 555, 833, true );
+
+add_image_size( 'col-md-3-landscape', 263, 175, true );
+add_image_size( 'col-md-3-portrait', 263, 394, true );
 
 
 /***********************************************************************************************************************

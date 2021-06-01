@@ -124,6 +124,30 @@ if (class_exists('CSF')) {
                         'title' => 'Digital Signature',
                         'desc'  => 'Set the digital signature of your\'s.',
                     ),
+                    array(
+                        'id'    => 'mss_misc_gallery_column_size',
+                        'type'  => 'select',
+                        'title' => 'Column Size (Gallery)',
+                        'options'     => array(
+                            '6'  => '2 Columns',
+                            '4'  => '3 Columns',
+                            '3'  => '4 Columns',
+                        ),
+                        'default' => '4',
+                        'desc'    => 'Set the column size of image gallery.',
+                    ),
+                    array(
+                        'id'    => 'mss_misc_album_column_size',
+                        'type'  => 'select',
+                        'title' => 'Column Size (Portfolio)',
+                        'options'     => array(
+                            '6'  => '2 Columns',
+                            '4'  => '3 Columns',
+                            '3'  => '4 Columns',
+                        ),
+                        'default' => '4',
+                        'desc'    => 'Set the column size of image album.',
+                    ),
                 ),
             ),
         )

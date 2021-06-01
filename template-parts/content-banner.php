@@ -9,7 +9,7 @@
 ?>
 
 <!-- Header Banner -->
-<header class="banner-header banner-img valign bg-img" data-overlay-dark="<?php echo cs_get_options()['mss_misc']['mss_misc_page_header_overlay'] ?>" data-background="<?php echo the_post_thumbnail_url(); ?>" data-stellar-background-ratio="0.5">
+<header class="banner-header banner-img valign bg-img" data-overlay-dark="<?php echo cs_get_options()['mss_misc']['mss_misc_page_header_overlay'] ?>" data-background="<?php the_post_thumbnail_url(); ?>" data-stellar-background-ratio="0.5">
     <div class="container">
         <div class="row">
             <div class="col-md-7 offset-md-5 text-right caption mt-60 animate-box" data-animate-effect="fadeInUp">
