@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: MSS Portfolio
+ * Template Name: MSS Films
  *
  * @package    WordPress
  * @subpackage M_S_Shahnewaz_Dark
@@ -12,6 +12,6 @@
 <?php get_template_part( 'template-parts/content', 'loading' ); ?>
 <?php get_template_part( 'template-parts/content', 'navbar' ); ?>
 <?php get_template_part( 'template-parts/content', 'banner' ); ?>
-<?php get_template_part( 'page-contents/main', 'portfolio' ); ?>
+<?php get_template_part( 'page-contents/main', 'films' ); ?>
 <?php get_template_part( 'template-parts/content', 'footer' ); ?>
 <?php get_footer(); ?>
