@@ -43,3 +43,6 @@ Text Domain: msshahnewaz
 .text-default {
     color: #9B5350;
 }
+#sb_instagram a:hover {
+    opacity: 0.5 !important;
+}
