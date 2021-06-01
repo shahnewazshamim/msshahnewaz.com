@@ -253,6 +253,15 @@ if (class_exists('CSF')) {
                 ),
             ),
             array(
+                'id'    => 'mss_bio_awards_count',
+                'type'  => 'slider',
+                'min'   => 0,
+                'max'   => 1000,
+                'step'  => 1,
+                'title' => 'Number of Awards Show',
+                'desc'  => 'Set the amount of awards to show in list.',
+            ),
+            array(
                 'id'           => 'mss_bio_awards',
                 'type'         => 'repeater',
                 'min'          => 1,
