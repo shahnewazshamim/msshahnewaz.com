@@ -10,8 +10,14 @@
 
 <section class="section-padding">
     <div class="container">
-        <?php if(cs_get_options()['mss_hire_is_other_page']): ?>
-            <?php get_template_part( 'template-parts/content', 'hire' ); ?>
-        <?php endif; ?>
+        <?php echo do_shortcode( '[youtube-feed]' ); ?>
     </div>
 </section>
+
+<?php if(cs_get_options()['mss_hire_is_other_page']): ?>
+    <section class="section-padding">
+        <div class="container">
+            <?php get_template_part( 'template-parts/content', 'hire' ); ?>
+        </div>
+    </section>
+<?php endif; ?>
