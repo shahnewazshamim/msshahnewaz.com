@@ -31,7 +31,7 @@
                 </div>
             <?php endif; ?>
             <div class="col-md-4 footer-text-right">
-                <p><?php echo cs_get_options()['mss_footer']['mss_footer_copyright'] ?></p>
+                <p><?php echo '&copy; ' . date('Y') . ' | ' . cs_get_options()['mss_footer']['mss_footer_copyright'] ?></p>
             </div>
         </div>
     </div>
