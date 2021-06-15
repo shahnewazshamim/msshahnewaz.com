@@ -24,7 +24,7 @@
             <div class="col-md-6 animate-box" data-animate-effect="fadeInUp">
                 <h6><?php echo cs_get_options()['mss_hire_title'] ?></h6>
                 <p class="text-justify"><?php echo cs_get_options()['mss_hire_desc'] ?></p>
-                <div class="col-md-2 col-sm-12">
+                <div class="col-md-6 col-sm-12">
                     <a href="<?php echo cs_get_options()['mss_hire_google_link']['url'] ?>" target="<?php echo cs_get_options()['mss_hire_google_link']['target'] ?>"
                        class="butn butn-dark mt-10 text-center" style="display: block"><span><?php echo cs_get_options()['mss_hire_google_link']['text'] ?></span></a>
                 </div>

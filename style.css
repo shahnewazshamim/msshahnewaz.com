@@ -46,3 +46,9 @@ Text Domain: msshahnewaz
 #sb_instagram a:hover {
     opacity: 0.5 !important;
 }
+.navbar .navbar-nav .active {
+    font-weight: 900;
+}
+.jophoto-about-img .img {
+    opacity: 0.9;
+}

@@ -10,7 +10,7 @@
 
 <?php if(cs_get_options()['mss_home_is_instagram']): ?>
     <!-- Instagram -->
-    <section class="jophoto-gallery section-padding">
+    <section class="jophoto-gallery">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 mb-30">
