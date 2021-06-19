@@ -229,6 +229,41 @@ if ( ! function_exists( 'the_content_without_image' ) ) {
 }
 
 
+/***********************************************************************************************************************
+ * Image caption render function
+ **********************************************************************************************************************/
+if ( ! function_exists( 'get_image_caption' ) ) {
+
+	function get_image_caption($id) {
+		$caption = '';
+		if(wp_get_attachment_metadata($id)['image_meta']['created_timestamp']) {
+			$date = ' Date - ' . date( 'jS F, Y', wp_get_attachment_metadata( $id )['image_meta']['created_timestamp'] );
+		}
+		if(cs_get_options()['mss_misc']['mss_misc_is_caption']) {
+			$caption = wp_get_attachment_caption ($id) . ' ';
+		}
+
+		echo $caption . 'Photo by ' . get_userdata(1)->display_name . $date;
+	}
+}
+
+
+/***********************************************************************************************************************
+ * Image sort by date in gallery except portfolio
+ **********************************************************************************************************************/
+if ( ! function_exists( 'sort_by_date' ) ) {
+
+	function sort_by_date($ids) {
+		foreach ($ids as $id) {
+			$images[$id] = (wp_get_attachment_metadata($id)['image_meta']['created_timestamp']) ? date( 'Ymd', wp_get_attachment_metadata( $id )['image_meta']['created_timestamp'] ) : 0;
+		}
+		arsort($images);
+
+		return $images;
+	}
+}
+
+
 
 
 /* FOR DEV */
