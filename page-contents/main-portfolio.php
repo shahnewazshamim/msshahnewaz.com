@@ -19,6 +19,10 @@ $args = array(
             'terms'     => ['series','story'],
         )
     ),
+    'orderby'   => array(
+        'meta_value_num' => 'ASC',
+    ),
+    'meta_key' => 'position'
 );
 $the_query = new WP_Query( $args );
 $orientation = get_post_custom_values('orientation')[0];
