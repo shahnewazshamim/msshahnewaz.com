@@ -434,11 +434,6 @@ if (class_exists('CSF')) {
                 'title' => 'Contact Page Link',
             ),
             array(
-                'id'    => 'mss_hire_client_link',
-                'type'  => 'link',
-                'title' => 'Client Page Link',
-            ),
-            array(
                 'id'    => 'mss_hire_commercial_link',
                 'type'  => 'link',
                 'title' => 'Commercial Page Link',

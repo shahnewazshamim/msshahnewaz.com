@@ -203,6 +203,69 @@ if ( ! function_exists( 'create_portfolio_post_type' ) ) {
     add_action( 'init', 'create_portfolio_post_type' );
 }
 
+if ( ! function_exists( 'create_commercial_post_type' ) ) {
+
+	function create_commercial_post_type() {
+
+		register_post_type( 'commercials',
+			array(
+				'labels' => array(
+					'name' 				  => __( 'Commercials' ),
+					'singular_name' 	  => __( 'Commercial' ),
+					'menu_name'           => __( 'Commercials', 'M_S_Shahnewaz_Dark' ),
+					'all_items'           => __( 'All Commercials', 'M_S_Shahnewaz_Dark' ),
+					'view_item'           => __( 'View Commercial', 'M_S_Shahnewaz_Dark' ),
+					'add_new_item'        => __( 'Add New Commercial', 'M_S_Shahnewaz_Dark' ),
+					'add_new'             => __( 'Add New', 'M_S_Shahnewaz_Dark' ),
+					'edit_item'           => __( 'Edit Commercial', 'M_S_Shahnewaz_Dark' ),
+					'update_item'         => __( 'Update Commercial', 'M_S_Shahnewaz_Dark' ),
+					'search_items'        => __( 'Search Commercial', 'M_S_Shahnewaz_Dark' ),
+					'not_found'           => __( 'Not Found', 'M_S_Shahnewaz_Dark' ),
+					'not_found_in_trash'  => __( 'Not found in Trash', 'M_S_Shahnewaz_Dark' ),
+				),
+				'rewrite'             => array('slug' => 'commercial'),
+				'menu_icon'           => 'dashicons-businesswoman',
+				'description'         => __( 'Stories and Series', 'M_S_Shahnewaz_Dark' ),
+				'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields', ),
+				'hierarchical'        => false,
+				'public'              => true,
+				'show_ui'             => true,
+				'show_in_menu'        => true,
+				'show_in_nav_menus'   => true,
+				'show_in_admin_bar'   => true,
+				'menu_position'       => 7,
+				'can_export'          => true,
+				'has_archive'         => true,
+				'exclude_from_search' => false,
+				'publicly_queryable'  => true,
+				'capability_type'     => 'page',
+				'show_in_rest'        => true,
+			)
+		);
+
+		register_taxonomy('genres', array('commercials'), array(
+			'hierarchical' => true,
+			'labels'       => array(
+				'name'              => _x( 'Commercial Genres', 'taxonomy general name' ),
+				'singular_name'     => _x( 'Genre', 'taxonomy singular name' ),
+				'search_items'      =>  __( 'Search Genre' ),
+				'all_items'         => __( 'All Genre' ),
+				'edit_item'         => __( 'Edit Commercial Genre' ),
+				'update_item'       => __( 'Update Commercial Genre' ),
+				'add_new_item'      => __( 'Add New Genre' ),
+				'new_item_name'     => __( 'New Commercial Genre' ),
+				'menu_name'         => __( 'Genres' ),
+			),
+			'show_ui'           => true,
+			'show_in_rest'      => true,
+			'show_admin_column' => true,
+			'query_var'         => true,
+			'rewrite'           => array( 'slug' => 'subject' ),
+		));
+	}
+
+	add_action( 'init', 'create_commercial_post_type' );
+}
 
 /***********************************************************************************************************************
  * Apply filter for custom post type
@@ -213,7 +276,7 @@ if ( ! function_exists( 'the_content_without_image' ) ) {
     function the_content_without_image() {
 
         global $post;
-        if($post->post_type == 'portfolios') {
+        if($post->post_type == 'portfolios' || $post->post_type == 'commercials') {
             $content = get_the_content();
             $content = preg_replace( '/<figure[^>]+./', '', $content );
             $content = preg_replace( '/<ul[^>]+./', '', $content );
