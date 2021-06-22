@@ -42,7 +42,7 @@
             <?php endif; ?>
             <div class="row jophoto-photos mt-30" id="jophoto-section-photos">
                 <?php foreach($ids as $id) : ?>
-                    <?php $grid = (cs_get_options()['mss_misc']['mss_misc_album_gallery_column_size']) ? cs_get_options()['mss_misc']['mss_misc_album_gallery_column_size'] : 3; ?>
+                    <?php $grid = (cs_get_options()['mss_misc']['mss_misc_commercial_gallery_column_size']) ? cs_get_options()['mss_misc']['mss_misc_commercial_gallery_column_size'] : 3; ?>
                     <div class="col-md-<?php echo $grid ?> animate-box" data-animate-effect="fadeInUp">
                         <a href="<?php echo wp_get_attachment_image_src($id, 'full')[0] ?>" class="d-block jophoto-photo-item" data-caption="<?php get_image_caption($id) ?>" data-fancybox="gallery">
                             <img src="<?php echo wp_get_attachment_image_src($id, 'col-md-' . $grid . '-' . $orientation)[0] ?>" alt="Image" class="img-fluid">

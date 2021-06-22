@@ -127,7 +127,7 @@ if (class_exists('CSF')) {
                     array(
                         'id'    => 'mss_misc_gallery_column_size',
                         'type'  => 'select',
-                        'title' => 'Column Size (Gallery)',
+                        'title' => 'Column Size (Singles/Portraits Gallery)',
                         'options'     => array(
                             '6'  => '2 Columns',
                             '4'  => '3 Columns',
@@ -139,7 +139,7 @@ if (class_exists('CSF')) {
                     array(
                         'id'    => 'mss_misc_album_column_size',
                         'type'  => 'select',
-                        'title' => 'Column Size (Portfolio)',
+                        'title' => 'Column Size (Portfolio Albums)',
                         'options'     => array(
                             '6'  => '2 Columns',
                             '4'  => '3 Columns',
@@ -151,7 +151,7 @@ if (class_exists('CSF')) {
                     array(
 	                    'id'    => 'mss_misc_album_gallery_column_size',
 	                    'type'  => 'select',
-	                    'title' => 'Column Size (Portfolio Gallery)',
+	                    'title' => 'Column Size (Portfolio Albums Gallery)',
 	                    'options'     => array(
 		                    '6'  => '2 Columns',
 		                    '4'  => '3 Columns',
@@ -159,6 +159,30 @@ if (class_exists('CSF')) {
 	                    ),
 	                    'default' => '4',
 	                    'desc'    => 'Set the column size of image of album gallery.',
+                    ),
+                    array(
+	                    'id'    => 'mss_misc_commercial_column_size',
+	                    'type'  => 'select',
+	                    'title' => 'Column Size (Commercial Albums)',
+	                    'options'     => array(
+		                    '6'  => '2 Columns',
+		                    '4'  => '3 Columns',
+		                    '3'  => '4 Columns',
+	                    ),
+	                    'default' => '4',
+	                    'desc'    => 'Set the column size of image album.',
+                    ),
+                    array(
+	                    'id'    => 'mss_misc_commercial_gallery_column_size',
+	                    'type'  => 'select',
+	                    'title' => 'Column Size (Commercial Albums Gallery)',
+	                    'options'     => array(
+		                    '6'  => '2 Columns',
+		                    '4'  => '3 Columns',
+		                    '3'  => '4 Columns',
+	                    ),
+	                    'default' => '4',
+	                    'desc'    => 'Set the column size of image of commercial album gallery.',
                     ),
                     array(
 	                    'id'         => 'mss_misc_is_description',

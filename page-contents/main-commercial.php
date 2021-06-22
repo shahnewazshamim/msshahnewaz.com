@@ -39,7 +39,7 @@ $styles = array(
         <div class="row">
             <?php if ( $the_query->have_posts() ) : ?>
                 <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                    <?php $grid = (cs_get_options()['mss_misc']['mss_misc_album_column_size']) ? cs_get_options()['mss_misc']['mss_misc_album_column_size'] : 3; ?>
+                    <?php $grid = (cs_get_options()['mss_misc']['mss_misc_commercial_column_size']) ? cs_get_options()['mss_misc']['mss_misc_commercial_column_size'] : 3; ?>
                     <div class="col-md-<?php echo $grid ?> animate-box" data-animate-effect="fadeInUp">
                         <div class="services-con mb-60">
                             <div class="services-title">
