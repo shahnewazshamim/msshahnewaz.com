@@ -98,6 +98,14 @@ if (class_exists('CSF')) {
                         'title'      => 'Enable "LOADING" while page load.',
                     ),
                     array(
+                        'id'         => 'mss_misc_is_headline',
+                        'type'       => 'switcher',
+                        'text_on'    => 'Enable',
+                        'text_off'   => 'Disable',
+                        'text_width' => 100,
+                        'title'      => 'Enable Bio Headline in home page.',
+                    ),
+                    array(
                         'id'    => 'mss_misc_page_header',
                         'type'  => 'media',
                         'title' => 'Page Header Image',

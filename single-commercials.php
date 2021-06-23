@@ -23,16 +23,6 @@
             }
             $orientation = get_post_custom_values('orientation')[0];
             ?>
-            <div class="row">
-                <div class="col-md-6 float-left">
-                    <p><b>Client : </b><?php echo get_post_custom_values('client')[0] ?>
-                    <br><b>Genre : </b><?php echo get_post_custom_values('genre')[0] ?></p>
-                </div>
-                <div class="col-md-6 text-lg-right text-md-right">
-                    <p><b>Type : </b> <?php echo get_the_terms($post->ID, 'genres')[0]->name; ?>
-                    <br><b>Date : </b><?php echo get_post_custom_values('date')[0] ?></p>
-                </div>
-            </div>
             <?php if(cs_get_options()['mss_misc']['mss_misc_is_description']): ?>
                 <div class="row">
                     <div class="col-md-12">

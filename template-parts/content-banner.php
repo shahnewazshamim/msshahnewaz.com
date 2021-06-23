@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-7 offset-md-5 text-right caption mt-60 animate-box" data-animate-effect="fadeInUp">
-                <h5><?php echo get_post_custom_values('sub-title')[0] ?? get_the_terms($post->ID, 'types')[0]->name; ?></h5>
+                <h5><?php echo get_post_custom_values('sub-title')[0] ?? get_the_terms($post->ID, get_object_taxonomies($post)[0])[0]->name; ?></h5>
                 <h1><?php echo get_the_title() ?></h1>
             </div>
         </div>
