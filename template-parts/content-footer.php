@@ -25,8 +25,9 @@
             </div>
             <?php if(cs_get_options()['mss_footer']['mss_footer_is_logo']): ?>
                 <div class="col-md-4 footer-text-center">
-                    <div class="logo">
-                        <h1><a href="<?php site_url() ?>"><?php echo cs_get_options()['mss_header']['mss_header_site_name'] ?><span><?php echo cs_get_options()['mss_header']['mss_header_tagline'] ?></span></a></h1>
+                    <div class="footer-logo">
+                        <h1 class=""><a href="<?php site_url() ?>"><?php echo cs_get_options()['mss_header']['mss_header_site_name'] ?>
+                                <span><?php echo cs_get_options()['mss_header']['mss_header_tagline'] ?></span></a></h1>
                     </div>
                 </div>
             <?php endif; ?>

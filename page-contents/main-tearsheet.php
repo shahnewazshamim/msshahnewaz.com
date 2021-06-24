@@ -22,6 +22,7 @@
                     <?php $orientation = get_post_custom_values('orientation')[0]; ?>
                     <?php foreach($ids as $id) : ?>
                         <?php $grid = (cs_get_options()['mss_misc']['mss_misc_gallery_column_size']) ? cs_get_options()['mss_misc']['mss_misc_gallery_column_size'] : 3; ?>
+		                <?php if(wp_is_mobile()) $grid = 6; ?>
                         <div class="col-md-<?php echo $grid ?> animate-box" data-animate-effect="fadeInUp">
                             <a href="<?php echo wp_get_attachment_caption($id) ?>" target="_blank" class="d-block jophoto-photo-item">
                                 <img src="<?php echo wp_get_attachment_image_src($id, 'col-md-' . $grid . '-' . $orientation)[0] ?>" alt="Image" class="img-fluid">

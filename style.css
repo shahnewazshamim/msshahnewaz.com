@@ -21,6 +21,26 @@ Text Domain: msshahnewaz
 .logo span {
     font-size: 10px !important;
 }
+.footer-logo {
+    padding: 0;
+    margin: 20px 0;
+}
+.footer .footer-logo h1 {
+    font-weight: 400;
+    font-size: 30px;
+    color: #9c5451;
+    line-height: 0.85em;
+}
+.footer .footer-logo a span {
+    display: block;
+    margin-top: 5px;
+    font-size: 9px;
+    color: #999;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin-left: 15px;
+    line-height: 1em;
+}
 @media screen and (max-width: 991px) {
     .navbar .logo {
         margin-left: 0 !important;
