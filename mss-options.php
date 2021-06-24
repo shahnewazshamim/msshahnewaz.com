@@ -193,6 +193,14 @@ if (class_exists('CSF')) {
 	                    'desc'    => 'Set the column size of image of commercial album gallery.',
                     ),
                     array(
+	                    'id'         => 'mss_misc_is_commercial_description',
+	                    'type'       => 'switcher',
+	                    'text_on'    => 'Enable',
+	                    'text_off'   => 'Disable',
+	                    'text_width' => 100,
+	                    'title'      => 'Enable Commercial Album Description',
+                    ),
+                    array(
 	                    'id'         => 'mss_misc_is_description',
 	                    'type'       => 'switcher',
 	                    'text_on'    => 'Enable',
