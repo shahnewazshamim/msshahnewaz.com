@@ -612,4 +612,31 @@ if (class_exists('CSF')) {
         )
     ));
 
+
+    /*******************************************************************************************************************
+     * Codestar TAB - 404 Not Found
+     ******************************************************************************************************************/
+    CSF::createSection($prefix, array(
+        'id'     => 'mss_404',
+        'title'  => '404 Not Found',
+        'icon'   => 'fa fa-warning',
+        'fields' => array(
+	        array(
+		        'id'    => 'mss_404_title',
+		        'type'  => 'text',
+		        'title' => '404 Title'
+	        ),
+	        array(
+		        'id'    => 'mss_404_description',
+		        'type'  => 'textarea',
+		        'title' => '404 Description'
+	        ),
+	        array(
+		        'id'    => 'mss_404_button_link',
+		        'type'  => 'link',
+		        'title' => '404 Button Link'
+	        ),
+        )
+    ));
+
 }

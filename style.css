@@ -38,7 +38,6 @@ Text Domain: msshahnewaz
     color: #999;
     font-weight: 400;
     letter-spacing: 4px;
-    margin-left: 15px;
     line-height: 1em;
 }
 @media screen and (max-width: 991px) {
@@ -46,7 +45,6 @@ Text Domain: msshahnewaz
         margin-left: 0 !important;
     }
 }
-
 /*.logo-wrapper {
     padding: 48.5px 58px !important;
 }*/
