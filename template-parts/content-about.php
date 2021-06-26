@@ -31,12 +31,14 @@
                             <?php foreach(cs_get_options()['mss_bio_repeater'] as $key => $data) : ?>
                                 <p class="text-justify"><?php echo $data['mss_bio_repeater_para'] ?></p>
                             <?php endforeach; ?>
-                            <img src="<?php echo cs_get_options()['mss_misc']['mss_misc_signature']['url'] ?>" class="sign" alt="<?php echo cs_get_options()['mss_header']['mss_header_site_name'] ?>">
+                            <p class="mb-sm50">
+                                <img src="<?php echo cs_get_options()['mss_misc']['mss_misc_signature']['url'] ?>" class="sign" alt="<?php echo cs_get_options()['mss_header']['mss_header_site_name'] ?>">
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-5 animate-box" data-animate-effect="fadeInUp">
-                    <div class="jophoto-about-img">
+                    <div class="jophoto-about-img mb-sm30">
                         <div class="img"> <img src="<?php echo cs_get_options()['mss_misc']['mss_misc_profile']['url'] ?>" alt="<?php echo cs_get_options()['mss_header']['mss_header_site_name'] ?>"> </div>
                     </div>
                 </div>

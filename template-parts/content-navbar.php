@@ -14,7 +14,7 @@
     <div class="logo-wrapper valign">
         <div class="logo">
             <h2>
-                <a href="<?php site_url() ?>"><?php echo cs_get_options()['mss_header']['mss_header_site_name'] ?></a>
+                <a href="<?php echo home_url() ?>"><?php echo cs_get_options()['mss_header']['mss_header_site_name'] ?></a>
                 <span><?php echo cs_get_options()['mss_header']['mss_header_tagline'] ?></span>
             </h2>
         </div>
