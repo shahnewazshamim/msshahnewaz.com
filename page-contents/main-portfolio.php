@@ -10,7 +10,7 @@
 
 <?php
 $args = array(
-    'post_type'      => 'portfolios',
+    'post_type'      => 'works',
     'posts_per_page' => 50,
     'tax_query'      => array(
         array (

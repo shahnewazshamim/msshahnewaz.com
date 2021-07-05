@@ -139,27 +139,27 @@ if ( ! function_exists( 'add_menu_link_class' ) ) {
  * Register Custom Post Type (Stories) on Theme
  **********************************************************************************************************************/
 
-if ( ! function_exists( 'create_portfolio_post_type' ) ) {
+if ( ! function_exists( 'create_work_post_type' ) ) {
 
-    function create_portfolio_post_type() {
+    function create_work_post_type() {
 
-        register_post_type( 'portfolios',
+        register_post_type( 'works',
             array(
                 'labels' => array(
-                    'name' 				  => __( 'Portfolios' ),
-                    'singular_name' 	  => __( 'Portfolio' ),
-                    'menu_name'           => __( 'Portfolios', 'M_S_Shahnewaz_Dark' ),
-                    'all_items'           => __( 'All Portfolios', 'M_S_Shahnewaz_Dark' ),
-                    'view_item'           => __( 'View Portfolio', 'M_S_Shahnewaz_Dark' ),
-                    'add_new_item'        => __( 'Add New Portfolio', 'M_S_Shahnewaz_Dark' ),
+                    'name' 				  => __( 'Works' ),
+                    'singular_name' 	  => __( 'Work' ),
+                    'menu_name'           => __( 'Works', 'M_S_Shahnewaz_Dark' ),
+                    'all_items'           => __( 'All Works', 'M_S_Shahnewaz_Dark' ),
+                    'view_item'           => __( 'View Work', 'M_S_Shahnewaz_Dark' ),
+                    'add_new_item'        => __( 'Add New Work', 'M_S_Shahnewaz_Dark' ),
                     'add_new'             => __( 'Add New', 'M_S_Shahnewaz_Dark' ),
-                    'edit_item'           => __( 'Edit Portfolio', 'M_S_Shahnewaz_Dark' ),
-                    'update_item'         => __( 'Update Portfolio', 'M_S_Shahnewaz_Dark' ),
-                    'search_items'        => __( 'Search Portfolio', 'M_S_Shahnewaz_Dark' ),
+                    'edit_item'           => __( 'Edit Work', 'M_S_Shahnewaz_Dark' ),
+                    'update_item'         => __( 'Update Work', 'M_S_Shahnewaz_Dark' ),
+                    'search_items'        => __( 'Search Work', 'M_S_Shahnewaz_Dark' ),
                     'not_found'           => __( 'Not Found', 'M_S_Shahnewaz_Dark' ),
                     'not_found_in_trash'  => __( 'Not found in Trash', 'M_S_Shahnewaz_Dark' ),
                 ),
-                'rewrite'             => array('slug' => 'portfolio'),
+                'rewrite'             => array('slug' => 'work'),
                 'menu_icon'           => 'dashicons-portfolio',
                 'description'         => __( 'Stories and Series', 'M_S_Shahnewaz_Dark' ),
                 'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields', ),
@@ -179,17 +179,17 @@ if ( ! function_exists( 'create_portfolio_post_type' ) ) {
             )
         );
 
-        register_taxonomy('types', array('portfolios'), array(
+        register_taxonomy('types', array('works'), array(
             'hierarchical' => true,
             'labels'       => array(
-                'name'              => _x( 'Portfolio Types', 'taxonomy general name' ),
+                'name'              => _x( 'Work Types', 'taxonomy general name' ),
                 'singular_name'     => _x( 'Type', 'taxonomy singular name' ),
                 'search_items'      =>  __( 'Search Type' ),
                 'all_items'         => __( 'All Types' ),
-                'edit_item'         => __( 'Edit Portfolio Type' ),
-                'update_item'       => __( 'Update Portfolio Type' ),
+                'edit_item'         => __( 'Edit Work Type' ),
+                'update_item'       => __( 'Update Work Type' ),
                 'add_new_item'      => __( 'Add New Type' ),
-                'new_item_name'     => __( 'New Portfolio Type' ),
+                'new_item_name'     => __( 'New Work Type' ),
                 'menu_name'         => __( 'Types' ),
             ),
             'show_ui'           => true,
@@ -200,7 +200,7 @@ if ( ! function_exists( 'create_portfolio_post_type' ) ) {
         ));
     }
 
-    add_action( 'init', 'create_portfolio_post_type' );
+    add_action( 'init', 'create_work_post_type' );
 }
 
 if ( ! function_exists( 'create_commercial_post_type' ) ) {
