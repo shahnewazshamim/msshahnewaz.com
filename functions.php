@@ -276,7 +276,7 @@ if ( ! function_exists( 'the_content_without_image' ) ) {
     function the_content_without_image() {
 
         global $post;
-        if($post->post_type == 'portfolios' || $post->post_type == 'commercials') {
+        if($post->post_type == 'works' || $post->post_type == 'commercials') {
             $content = get_the_content();
             $content = preg_replace( '/<figure[^>]+./', '', $content );
             $content = preg_replace( '/<ul[^>]+./', '', $content );
